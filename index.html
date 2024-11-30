@@ -1,14 +1,3 @@
-const express = require('express');
-const TelegramBot = require('node-telegram-bot-api');
-
-// 创建 Express 应用
-const app = express();
-const port = process.env.PORT || 3000;
-
-// 初始化 Telegram Bot
-const token = 'YOUR_TELEGRAM_BOT_TOKEN';
-const bot = new TelegramBot(token, { polling: true });
-
 // 示例数据
 let users = [
     { id: 1, name: 'User1', icon: 'https://example.com/icon1.png', likes: 0 },
